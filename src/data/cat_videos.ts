@@ -1,3 +1,5 @@
+import { Video } from "@hottubapp/core";
+
 export default [
   {
     title: "20 Minutes of Adorable Kittens 😍 | BEST Compilation",
@@ -2080,7 +2082,7 @@ export default [
       maxres: "https://i.ytimg.com/vi/6THbiD84U1I/maxresdefault.jpg",
     },
     uploader: "Cute Cat of NI",
-    uploaderUrl: "",
+    uploaderUrl: "https://www.youtube.com/@CuteCatofNI",
     verified: false,
     preview: "https://i.ytimg.com/vi/6THbiD84U1I/mqdefault.jpg",
     originalUrl: "https://www.youtube.com/watch?v=6THbiD84U1I",
@@ -2820,20 +2822,18 @@ export default [
     channel: "pussy-play",
   },
 ].map((e, i) => {
-  let data = {
-    ...e,
-    id: String(i),
-    formats: null,
+  let data = new Video({
+    displayId: String(i),
+    title: e.title,
+    url: e.url,
+    thumb: e.thumb,
     views: Number(e.views ?? 0),
     duration: Number(e.duration ?? 0),
-    network: "pussy-play",
     channel: "pussy-play",
-  };
-
-  delete data.preview;
-
-  // remove empty uploaderUrl
-  data.uploaderUrl = e.uploaderUrl ? e.uploaderUrl : null;
+    uploader: e.uploader,
+    uploaderUrl: e.uploaderUrl ?? undefined,
+    verified: e.verified,
+  });
 
   return data;
 });
