@@ -17,22 +17,16 @@ npm run dev
 curl -X POST http://localhost:3000/api/status -d '{"page":"1","channel":"hottub","sort":"popular","sexuality":"straight","query":"test"}'
 ```
 
-### Channels
-
-```bash
-curl -X POST http://localhost:3000/api/channels -d '{"page":"1","channel":"hottub","sort":"popular","sexuality":"straight","query":"test"}'
-```
-
 ### Popular Videos
 
 ```bash
-curl -X POST http://localhost:3000/api/videos/popular -d '{"page":"1","channel":"hottub","sort":"popular","sexuality":"straight","query":"test"}'
+curl -X POST http://localhost:3000/api/videos -d '{"page":"1","channel":"hottub","sort":"popular","sexuality":"straight"}'
 ```
 
 ### Search Videos
 
 ```bash
-curl -X POST http://localhost:3000/api/videos/search -d '{"page":"1","channel":"hottub","sort":"popular","sexuality":"straight","query":"test"}'
+curl -X POST http://localhost:3000/api/videos -d '{"page":"1","channel":"hottub","sort":"popular","sexuality":"straight","query":"test"}'
 ```
 
 ## Parameters
