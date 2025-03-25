@@ -57,9 +57,9 @@ export default class AliceProvider implements ContentProvider {
   };
 
   getVideos(options: VideosRequest): Promise<VideosResponse> {
-    const searchResults = items.filter((e) =>
-      e.title.toLowerCase().includes(options.query?.toLowerCase() ?? "")
-    );
+    const searchResults = items
+      .filter((e) => e.title.toLowerCase().includes(options.query?.toLowerCase() ?? ""))
+      .map((e) => ({ ...e, channel: this.channel.id }));
 
     return Promise.resolve({ items: searchResults, pageInfo: { hasNextPage: false } });
   }

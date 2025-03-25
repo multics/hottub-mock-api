@@ -4,7 +4,9 @@ import { getVideos } from "./routes/api/videos";
 
 const app = express();
 
-app.use(express.json());
+app.use(
+  express.json({ type: ["application/json", "text/plain", "application/x-www-form-urlencoded"] })
+);
 
 // Root route
 app.get("/api", (req: Request, res: Response) => {

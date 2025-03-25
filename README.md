@@ -14,19 +14,19 @@ npm run dev
 ### Status
 
 ```bash
-curl -X POST http://localhost:3000/api/status -d '{"page":"1","channel":"hottub","sort":"popular","sexuality":"straight","query":"test"}'
+curl -X POST http://localhost:3000/api/status
 ```
 
 ### Popular Videos
 
 ```bash
-curl -X POST http://localhost:3000/api/videos -d '{"page":"1","channel":"hottub","sort":"popular","sexuality":"straight"}'
+curl -X POST http://localhost:3000/api/videos -d '{"page":"1","channel":"alice","sort":"popular","sexuality":"straight"}'
 ```
 
 ### Search Videos
 
 ```bash
-curl -X POST http://localhost:3000/api/videos -d '{"page":"1","channel":"hottub","sort":"popular","sexuality":"straight","query":"test"}'
+curl -X POST http://localhost:3000/api/videos -d '{"page":"1","channel":"alice","sort":"popular","sexuality":"straight","query":"test"}'
 ```
 
 ## Parameters
