@@ -5,7 +5,7 @@ import {
   ContentProvider,
   VideosRequest,
   VideosResponse,
-} from "@hottubapp/core";
+} from "@/core";
 
 export default class BobProvider implements ContentProvider {
   channel: Channel = {

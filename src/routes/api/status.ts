@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { ServerStatus, ChannelStatus } from "@hottubapp/core";
+import { ServerStatus, ChannelStatus } from "@/core"
 import registry from "@/providers";
 
 const MOCK_RESPONSE: ServerStatus = {

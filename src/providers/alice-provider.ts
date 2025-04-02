@@ -5,7 +5,7 @@ import {
   ContentProvider,
   Channel,
   ChannelStatus,
-} from "@hottubapp/core";
+} from "@/core";
 
 export default class AliceProvider implements ContentProvider {
   channel: Channel = {
