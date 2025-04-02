@@ -14,7 +14,12 @@
     "types": ["node"],
     "declaration": true,
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ],
+      "@/core/*": [
+        "src/core/*"
+      ]
     }
   },
   "include": ["src/**/*"],
