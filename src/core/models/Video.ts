@@ -1,4 +1,4 @@
-import { sha256 } from "@/core/utils/hash"
+import { sha256 } from "../utils/hash"
 
 // https://github.com/ytdl-org/youtube-dl/blob/da7223d4aa42ff9fc680b0951d043dd03cec2d30/youtube_dl/extractor/common.py#L120
 export interface Format {

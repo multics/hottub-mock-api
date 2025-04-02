@@ -1,4 +1,4 @@
-import { Channel, ChannelStatus } from "@/core/types"
+import { Channel, ChannelStatus } from "../../types"
 
 export const SORT_OPTIONS = {
   relevance: { id: "relevance", title: "Most Relevant", value: "" },

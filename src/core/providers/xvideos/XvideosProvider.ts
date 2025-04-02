@@ -2,9 +2,9 @@ import axios from "axios"
 
 import * as cheerio from "cheerio"
 import type { CheerioAPI } from "cheerio"
-import { ContentProvider, VideosResponse } from "@/core/types"
-import { Video } from "@/core/models/Video"
-import { SearchOptions } from "@/core/models/SearchOptions"
+import { ContentProvider, VideosResponse } from "../../types"
+import { Video } from "../../models/Video"
+import { SearchOptions } from "../../models/SearchOptions"
 import { XVIDEOS_CHANNEL, SORT_OPTIONS } from "./XvideosChannel"
 
 export default class XvideosProvider implements ContentProvider {
